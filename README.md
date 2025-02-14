@@ -68,7 +68,7 @@ docker run --mount=type=bind,source=$(pwd)/Packages/rt.xr.maf,target=/install -i
 
 **Other platforms**
 
-Refer to the [git repository](https://github.com/5G-MAG/rt-xr-maf-native/tree/feature/android) for more informations on the build process.
+Refer to the [rt-xr-maf-native repository](https://github.com/5G-MAG/rt-xr-maf-native/) for more information on the build process.
 
 
 ### Building and running the Unity project
