@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/License-5G--MAG%20Public%20License%20(v1.0)-blue" alt="License">
 </p>
 
-
 ## Introduction
 
 The XR Unity Player is an interactive and XR-capable glTF scene viewer implemented in Unity3D. It supports glTF extensions specified in the MPEG-I Scene Description framework ([ISO/IEC 23090-14](https://www.iso.org/standard/86439.html)). These extensions support features such as video textures, spatial audio sources, interactivity behaviors, XR anchors,...
@@ -14,7 +13,6 @@ The project has dependencies integrated as [Unity embedded packages](https://doc
 
 - **rt-xr-glTFast** : This package supports MPEG-I glTF extensions, it is installed as a git submodule : [github.com/5G-MAG/rt-xr-maf-native](https://github.com/5G-MAG/rt-xr-maf-native)
 - **rt-xr-maf-native**: Supports media pipeline plugins, see the package's [README](./Packages/rt.xr.maf/README.md) for details. It must be compiled and installed manually : [github.com/5G-MAG/rt-xr-maf-native](https://github.com/5G-MAG/rt-xr-maf-native)
-
 
 Additional information can be found at: https://5g-mag.github.io/Getting-Started/pages/xr-media-integration-in-5g/
 
@@ -31,7 +29,6 @@ git clone --recursive https://github.com/5G-MAG/rt-xr-unity-player.git
 
 
 ## Build the project and install it on an Android device
-
 
 ### Supported platforms
 
@@ -58,7 +55,7 @@ See the related [documentation](./docs/audio-spatializer.md)
 
 The easiest way is to compile the media pipeline plugins is by using the Dockerfile: 
 ```
-git clone git@github.com:5G-MAG/rt-xr-maf-native.git
+git clone  https://github.com/5G-MAG/rt-xr-maf-native.git
 cd rt-xr-maf-native
 docker build -t rtxrmaf:builder .
 ```
@@ -114,4 +111,3 @@ adb push ./Paths /storage/emulated/0/Android/data/com.fivegmag.rtxrplayer/files/
 ## License
 
 This project is developed under 5G-MAG's Public License. For the full license terms, please see the LICENSE file distributed along with the repository or retrieve it from [here](https://drive.google.com/file/d/1cinCiA778IErENZ3JN52VFW-1ffHpx7Z/view).
-
